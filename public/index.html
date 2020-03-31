@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Игра «Мельница»</title>
+	
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="waiting">
+		<header class="about-game">
+			<h1 class="game-name">
+				Мельница
+				<span>Nine Men’s Morris</span>
+			</h1>
+			<p class="game-description">
+				«Мельница» – древняя настольная логическая игра для тренировки стратегического мышления, дальняя родственница крестиков-ноликов. 
+				Развлечение имеет нестандартную механику, которая может показаться гораздо сложнее, 
+				чем есть на самом деле. Мы предлагаем сыграть Вам в одну из её версий, известную как 
+				«Nine Men’s Morris» («Танец девяти мужчин») аналогично названию типа доски, используемой для неё.
+			</p>
+		</header>
+		
+		<section class="waiting-for-another-player">
+			<h2 class="visually-hidden">Ожидание другого игрока</h2>
+			<p>Подождите подключения следующего игрока</p>
+		</section>
+	</main>
+	
+	<main class="game" hidden>
+		<h1 class="visually-hidden">Игры</h1>
+		
+		<div class="user-profile">
+			<p>Хотите выйти?</p>
+			<button type="button" class="button-stop-game">Прервать игру</button>
+		</div>
+		
+		<section class="user-info player-1">
+			<h2 class="visually-hidden">Первый игрок</h2>
+			<div class="player-name">Имя</div>
+			<div class="player-side">Синяя сторона</div>
+			<div class="player-free-checkers">
+				<div class="cell cell-player-1"></div>
+				<div class="cell cell-player-1"></div>
+				<div class="cell cell-player-1"></div>
+				<div class="cell cell-player-1"></div>
+				<div class="cell cell-player-1"></div>
+				<div class="cell cell-player-1"></div>
+				<div class="cell cell-player-1"></div>
+				<div class="cell cell-player-1"></div>
+				<div class="cell cell-player-1"></div>
+			</div>
+		</section>
+		
+		<section>
+			<h2 class="visually-hidden">Поле открытой игры</h2>
+			<div class="field">
+				<div class="field-vertical-merellus">
+					<div class="merellus line-4" data-line-id="line-4"></div>
+					<div class="merellus line-8" data-line-id="line-8"></div>
+					<div class="merellus line-12" data-line-id="line-12"></div>
+					<div class="merellus line-13" data-line-id="line-13"></div>
+					<div class="merellus line-15" data-line-id="line-15"></div>
+					<div class="merellus line-10" data-line-id="line-10"></div>
+					<div class="merellus line-6" data-line-id="line-6"></div>
+					<div class="merellus line-2" data-line-id="line-2"></div>
+				</div>
+				<div class="field-horizontal-merellus">
+					<div class="merellus line-1" data-line-id="line-1"></div>
+					<div class="merellus line-5" data-line-id="line-5"></div>
+					<div class="merellus line-9" data-line-id="line-9"></div>
+					<div class="merellus line-16" data-line-id="line-16"></div>
+					<div class="merellus line-14" data-line-id="line-14"></div>
+					<div class="merellus line-11" data-line-id="line-11"></div>
+					<div class="merellus line-7" data-line-id="line-7"></div>
+					<div class="merellus line-3" data-line-id="line-3"></div>
+				</div>
+				
+				<div class="field-cells">
+					<button class="cell" data-cell-id="cell-1"></button>
+					<div class="not-cell"></div>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-2"></button>
+					<div class="not-cell"></div>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-3"></button>
+					
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-4"></button>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-5"></button>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-6"></button>
+					<div class="not-cell"></div>
+					
+					<div class="not-cell"></div>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-7"></button>
+					<button class="cell" data-cell-id="cell-8"></button>
+					<button class="cell" data-cell-id="cell-9"></button>
+					<div class="not-cell"></div>
+					<div class="not-cell"></div>
+					
+					<button class="cell" data-cell-id="cell-10"></button>
+					<button class="cell" data-cell-id="cell-11"></button>
+					<button class="cell" data-cell-id="cell-12"></button>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-13"></button>
+					<button class="cell" data-cell-id="cell-14"></button>
+					<button class="cell" data-cell-id="cell-15"></button>
+					
+					<div class="not-cell"></div>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-16"></button>
+					<button class="cell" data-cell-id="cell-17"></button>
+					<button class="cell" data-cell-id="cell-18"></button>
+					<div class="not-cell"></div>
+					<div class="not-cell"></div>
+					
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-19"></button>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-20"></button>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-21"></button>
+					<div class="not-cell"></div>
+					
+					<button class="cell" data-cell-id="cell-22"></button>
+					<div class="not-cell"></div>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-23"></button>
+					<div class="not-cell"></div>
+					<div class="not-cell"></div>
+					<button class="cell" data-cell-id="cell-24"></button>
+				</div>
+			</div>
+		</section>
+		
+		<section class="user-info player-2">
+			<h2 class="visually-hidden">Второй игрок</h2>
+			<div class="player-name">Имя</div>
+			<div class="player-side">Красная сторона</div>
+			<div class="player-free-checkers">
+				<div class="cell cell-player-2"></div>
+				<div class="cell cell-player-2"></div>
+				<div class="cell cell-player-2"></div>
+				<div class="cell cell-player-2"></div>
+				<div class="cell cell-player-2"></div>
+				<div class="cell cell-player-2"></div>
+				<div class="cell cell-player-2"></div>
+				<div class="cell cell-player-2"></div>
+				<div class="cell cell-player-2"></div>
+			</div>
+		</section>
+		
+		<section class="hint output-info">
+			<h2>Подсказка</h2>
+			<p>Подождите второго игрока</p>
+		</section>
+		<section class="error-message output-info message-empty">
+			<h2>Ошибка</h2>
+			<p></p>
+		</section>
+	</main>
+	
+	<div class='result-elem' hidden>
+		<h2 class="visually-hidden">Результат игры</h2>
+		<p></p>
+		<button type="button" class="button-repeat-game">Повторить игру</button>
+		<button type="button" class="button-close">Закрыть</button>
+	</div>
+	
+	<script type="module" src="scripts/client/index.js"></script>
+</body>
+</html>
